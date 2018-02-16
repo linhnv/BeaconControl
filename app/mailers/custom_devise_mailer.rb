@@ -17,13 +17,4 @@ class CustomDeviseMailer < Devise::Mailer
     opts[:reply_to] = AppConfig.registration_mailer_sender
     super
   end
-
-  def resend_new_password(customer, opts={})
-    @customer = customer
-    mail(
-      from: AppConfig.registration_mailer_sender,
-      subject: 'Your password has been reset',
-      reply_to: AppConfig.registration_mailer_sender
-    )
-  end
 end

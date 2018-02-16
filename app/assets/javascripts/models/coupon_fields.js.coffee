@@ -10,11 +10,7 @@ class @CouponFields
   constructor: (@dom) ->
     return unless @dom.length > 0
 
-    if @dom.closest('form').attr('id').indexOf('activity') > -1
-      @select = @dom.find('#activity_coupon_attributes_template')
-    else
-      @select = @dom.find('#schedule_coupon_attributes_template')
-
+    @select   = @dom.find('#activity_coupon_attributes_template')
     @mappings = @dom.data('mappings')
 
     @toggleFields(@select.val())

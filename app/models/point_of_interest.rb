@@ -1,2 +1,0 @@
-class PointOfInterest < Place
-end

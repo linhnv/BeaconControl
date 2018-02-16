@@ -3,7 +3,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the BSD 3-Clause License found in the
-# LICENSE.txt file in the root directory of this source tree.
+# LICENSE.txt file in the root directory of this source tree. 
 ###
 
 require 'rpush'
@@ -23,8 +23,6 @@ class Application < ActiveRecord::Base
 
   has_many :application_settings, dependent: :destroy
 
-  has_many :customers_applications, foreign_key: :application_id, class_name: 'ApplicationsCustomer'
-
   # Private
   has_many :rpush_apps, class_name: 'Rpush::Client::ActiveRecord::App'
 
@@ -34,16 +32,6 @@ class Application < ActiveRecord::Base
 
   has_many :users
   has_many :mobile_devices, through: :users
-
-  # newly added data
-  has_many :geofences
-  has_many :schedules
-  has_many :bus_stops
-  has_many :toilets
-  has_many :notifications
-  has_many :places
-  has_many :advertisments
-  has_many :home_sliders
 
   has_one :doorkeeper_application,
     class_name: 'Doorkeeper::Application',

@@ -6,7 +6,7 @@ gem 'rails', '4.2.0'
 # Use mysql/postgres as the database for Active Record
 
 gem 'pg'
-# gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 
 # Active Record composite primary keys support
 gem 'composite_primary_keys'
@@ -24,15 +24,12 @@ gem 'less'
 gem 'less-rails'
 gem 'less-rails-bootstrap'
 gem 'therubyracer'
-gem 'font-awesome-rails', '>= 4.7.0.2'
-gem 'momentjs-rails', '>= 2.9.0'
-gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
+gem 'font-awesome-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtime
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -68,7 +65,6 @@ gem 'barby'
 
 gem 'bootstrap-slider-rails'
 
-gem "mini_magick"
 # File upload and image processing gems
 # https://github.com/jnicklas/carrierwave
 gem 'carrierwave'
@@ -95,6 +91,9 @@ gem 'naught'
 gem 'nested_form'
 gem 'rpush', '~>2.4.0'
 
+gem 'omniauth_openid_connect'
+gem 'tzinfo-data'
+
 gem 'virtus'
 
 gem 'has_scope'
@@ -102,7 +101,7 @@ gem 'has_scope'
 # QRCode extension for Barby
 gem 'rqrcode'
 
-gem 'simple_form', '~>3.1.0'
+gem 'simple_form'
 
 gem "deep_merge", :require => 'deep_merge/rails_compat'
 
@@ -115,12 +114,6 @@ gem 'foreman'
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'premailer-rails'
-
-gem 'kaminari'
-
-gem 'httparty'
-
-gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'pry'

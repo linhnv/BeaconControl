@@ -7,10 +7,6 @@
 # Ignore bundler config.
 /.bundle
 
-config/config.yml
-config/database.yml
-config/sidekiq.yml
-
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep

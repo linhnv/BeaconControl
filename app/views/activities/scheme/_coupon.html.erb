@@ -3,7 +3,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the BSD 3-Clause License found in the
-# LICENSE.txt file in the root directory of this source tree.
+# LICENSE.txt file in the root directory of this source tree. 
 ###%>
 
 <%= content_for :scheme_content_right do %>
@@ -15,10 +15,8 @@
 <% end %>
 
 <%= content_for :scheme_content_left do %>
-  <% if @activity %>
-    <h3><%= t("activities.form.scheme.#{@activity.scheme}") %></h3>
-    <%= f.input :name, required: false %>
-  <% end %>
+  <h3><%= t("activities.form.scheme.#{@activity.scheme}") %></h3>
+  <%= f.input :name, required: false %>
 
   <div class="coupon-fields" data-mappings=<%= Coupon::TEMPLATE_FIELDS.to_json %>>
     <%= f.fields_for :coupon do |coupon| %>
@@ -66,14 +64,6 @@
 
       <div id="activity-image" class="filtered-field" data-name="image">
         <%= render partial: 'shared/image_input', locals: { form: coupon, object_name: :image } %>
-      </div>
-
-      <div id="activity-audio" class="filtered-field" data-name="audio">
-        <%= render partial: 'shared/attachment_input', locals: { form: coupon, object_name: :audio } %>
-      </div>
-
-      <div id="activity-video" class="filtered-field" data-name="video">
-        <%= render partial: 'shared/attachment_input', locals: { form: coupon, object_name: :video } %>
       </div>
     <% end %>
   </div>

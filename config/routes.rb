@@ -9,7 +9,6 @@
 require_relative '../lib/app_status'
 
 BeaconControl::Application.routes.draw do
-
   mount(
     AppStatus::Rack.new do |config|
       config.add_class AppStatus::DatabaseCheckRequest, name: :database_ok?
@@ -50,7 +49,7 @@ BeaconControl::Application.routes.draw do
     registrations: 'admin/registrations',
     confirmations: 'admin/confirmations',
     passwords: 'admin/passwords',
-    sessions: 'admin/sessions',
+    sessions: 'admin/sessions'
   }
   as :admin do
     put 'admins/confirmation' => 'admin/confirmations#update', as: 'update_admin_confirmation'
@@ -59,15 +58,6 @@ BeaconControl::Application.routes.draw do
       put 'admins/update' => 'admin/registrations#update', as: :admin_registration
     end
   end
-
-  resources :customers, except: [:new, :edit] do
-    put 'update_password' => 'customers#update_password'
-    collection do
-      delete :batch_delete
-    end
-  end
-
-  resources :notifications, only: [:new, :index, :create]
 
   resource :profile, only: [:update]
 
@@ -97,26 +87,6 @@ BeaconControl::Application.routes.draw do
   end
   resources :beacons_search, only: [:index]
   resources :zones
-  resources :geofences, except: [:show] do
-    collection do
-      patch :batch_update
-      delete :batch_delete
-      get :search
-    end
-  end
-  resources :schedules
-  resources :bus_stops, except: [:show] do
-    collection do
-      delete :batch_delete
-      get :search
-    end
-  end
-  resources :toilets, except: [:show] do
-    collection do
-      delete :batch_delete
-      get :search
-    end
-  end
 
   resource :map
 
@@ -126,27 +96,6 @@ BeaconControl::Application.routes.draw do
     member do
       put :activate
       put :deactivate
-    end
-  end
-
-  resources :places, except: [:show] do
-    collection do
-      delete :batch_delete
-      get :search
-    end
-  end
-
-  resources :advertisments, except: [:show] do
-    collection do
-      delete :batch_delete
-      get :search
-    end
-  end
-
-  resources :home_sliders, except: [:show] do
-    collection do
-      delete :batch_delete
-      get :search
     end
   end
 
@@ -199,14 +148,6 @@ BeaconControl::Application.routes.draw do
           get :beacons
         end
       end
-
-      resources :geofences, only: [:index]
-      resources :schedules, only: [:index]
-      resources :bus_stops, only: [:index]
-      resources :places, only: [:index, :show]
-      resources :toilets, only: [:index]
-      resources :advertisments, only: [:index]
-      resources :home_sliders, only: [:index]
 
       resources :beacons, only: [:index, :create, :update, :destroy] do
         collection do
