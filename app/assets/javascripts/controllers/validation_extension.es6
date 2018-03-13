@@ -86,7 +86,7 @@ export class ValidationExtension {
   setEvents() {
     this.el.
       on('submit', (event)=>{ this.validateSubmit(event); }).
-      on('change', (event)=>{ this.delayedValidate(event); });
+      on('keyup', (event)=>{ this.delayedValidate(event); });
   }
 
   mountValidations() {

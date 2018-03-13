@@ -10,8 +10,9 @@ $ ->
   new UuidInput($('.uuid-input'))
   new BootstrapSelect($('.selectpicker'))
   new SelectWithBorder($('.select-with-border'))
+  ###  
   new CookieInfo('#cookie-info')
-
+  ###
 
   $(".pick-a-color").pickAColor
     showSpectrum: false

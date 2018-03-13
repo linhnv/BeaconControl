@@ -1,0 +1,35 @@
+
+
+default: &default
+  config:
+    secret_key_base: 7a878b41eb072374207f3141d33743b3a7a03ac85cc22308c5923c38c7422e9e8b04ed2ae75f110df27e7f9e4b2b8c639cef0dde09ba7ca482ebca55668fdd15
+    registerable: true
+    mailer_sender: noreply@beacon-os.com
+    mailer_url_options:
+      host: localhost
+      port: 3000
+    smtp_settings:
+      address: smtp.gmail.com
+      port: 587
+      domain: beacon-os.com
+      user_name: noreply@beacon-os.com
+      password:
+      authentication: plain
+      enable_starttls_auto: false
+    system_mailer_receiver: noreply@beacon-os.com
+    create_test_app_on_new_account: true
+    google_api_key: key
+    autoload_extensions:
+      "Analytics":  false
+      "DwellTime":  false
+      "Kontakt.io": false
+      "Presence":   false
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

@@ -17,12 +17,7 @@
 
 <p><%= t('.go_ahead') %></p>
 
-<% if @resource.role == "customer" %>
-  <p>Please use this password: <%= @resource.password %> to login to your panel.</p>
-  <%= link_to t('.admin_panel_button'), new_admin_session_url, class: 'btn' %>
-<% else %>
 <%= link_to t('.admin_panel_button'), confirmation_url(@resource, confirmation_token: @token), class: 'btn' %>
-<% end %>
 
 <p><b><%= t('.for_developers_title') %></b></p>
 <p><%= t('.beacon_ctrl_description') %></p>

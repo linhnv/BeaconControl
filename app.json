@@ -3,7 +3,7 @@
   "description": "Setup and manage even large beacon deployments with BeaconControl - our open source platform",
   "repository": "https://github.com/upnext/BeaconControl",
   "website": "https://beaconcontrol.io/",
-  "logo": "https://admin.beaconcontrol.io/logo.svg",
+  "logo": "https://admin.beaconcontrol.io/logo.png",
   "env": {
     "RAILS_ENV": "production",
     "RACK_ENV": "production",

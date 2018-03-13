@@ -3,7 +3,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the BSD 3-Clause License found in the
-# LICENSE.txt file in the root directory of this source tree.
+# LICENSE.txt file in the root directory of this source tree. 
 ###
 
 class ApplicationDecorator < Draper::Decorator
@@ -19,9 +19,5 @@ class ApplicationDecorator < Draper::Decorator
     else
       object.name
     end
-  end
-
-  def self.collection_decorator_class
-    PaginatingDecorator
   end
 end

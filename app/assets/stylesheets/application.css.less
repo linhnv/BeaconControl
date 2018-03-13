@@ -16,15 +16,12 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require jquery-ui
  *= require font-awesome
- *= require ./ext/bootstrap-select.css
+ *= require ./ext/bootstrap-select
  *= require ./ext/bootstrap-switch
  *= require ./ext/bootstrap-slider
  *= require ./ext/jasny-bootstrap.min.css
  *= require ./ext/spectrum.css
- *= require ./ext/jquery.ezdz.css
- *= require bootstrap-datetimepicker
  *= require_self
  */
 
@@ -32,8 +29,8 @@
 @import './custom_bootstrap/boostrap_variables_override.less';
 @import './ext/pick_a_color.css.less';
 
-@import url("http://fast.fonts.net/cssapi/89f6a00c-ff50-4681-854d-c145084e049a.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+@import url("//fast.fonts.net/cssapi/89f6a00c-ff50-4681-854d-c145084e049a.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
 
 // Mobile
 @import './mobile/coupon.css.less';
@@ -42,10 +39,6 @@
 @import './parts/mixins.css.less';
 @import './parts/forms.css.less';
 @import './parts/beacon.css.less';
-@import './parts/geofence.css.less';
-@import './parts/toilet.css.less';
-@import './parts/schedule.css.less';
-@import './parts/customer.css.less';
 @import './parts/zone.css.less';
 @import './parts/buttons.css.less';
 @import './parts/general.css.less';

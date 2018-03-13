@@ -13,6 +13,8 @@ AppConfig = ApplicationConfig.new do
   config_key :store_dir
   config_key :registerable, default: true
   config_key :user_management, default: false
+  
+  config_key :google_api_key
 
   config_key :log_path
   config_key :log_level, default: 'debug'

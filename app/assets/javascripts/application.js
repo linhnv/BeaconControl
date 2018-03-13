@@ -3,7 +3,7 @@
  * All rights reserved.
  *
  * This source code is licensed under the BSD 3-Clause License found in the
- * LICENSE.txt file in the root directory of this source tree.
+ * LICENSE.txt file in the root directory of this source tree. 
  */
 
 // This is a manifest file that'll be compiled into application.js, which will include all the files
@@ -20,7 +20,6 @@
 //
 // ### Libs from gems
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
 //= require jquery_nested_form
 //= require twitter/bootstrap
@@ -33,19 +32,15 @@
 //= require ext/spectrum
 //= require ext/fontawesome-markers.min
 //= require ext/promise
-//= require ext/jquery.ezdz
 //
 // ### Bootstrap extensions
 //= require ext_bootstrap/bootstrap-slider
 //= require ext_bootstrap/bootstrap-switch
 //= require ext_bootstrap/bootstrap-select
 //= require ext_bootstrap/jasny-bootstrap.min
-//= require ext_bootstrap/jquery-bootpag
 //
 // ### Bootstrap extensions
 //= require bootstrap_components
-//= require moment
-//= require bootstrap-datetimepicker
 //
 // ### Custom etensions
 //= require custom_ext/map
@@ -72,4 +67,3 @@
 // ### Controllers
 //= require_tree ./controllers
 //
-//= require dropzone.js

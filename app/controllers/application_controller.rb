@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
   force_ssl if: -> { AppConfig.force_ssl }
   before_action :set_application_url
 
-  before_filter :configure_permitted_parameters, if: :devise_controller?
 
   def current_ability
     @current_ability ||= Ability.new(current_admin)
@@ -25,13 +24,4 @@ class ApplicationController < ActionController::Base
       ActionMailer::Base.default_url_options[:host] = AppConfig.mailer_url_options[:host] = request.host
     end
   end
-  protected
-
-  def configure_permitted_parameters
-    added_attrs = [:username, :email, :password, :password_confirmation, :remember_me]
-    devise_parameter_sanitizer.for(:sign_up).push(added_attrs)
-    devise_parameter_sanitizer.for(:sign_in).push(added_attrs)
-    devise_parameter_sanitizer.for(:account_update).push(added_attrs)
-  end
-
 end
