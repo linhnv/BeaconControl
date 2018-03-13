@@ -26,11 +26,11 @@ class @Coupon
 
     @dom.find('input[type="text"], textarea').keyup ->
       # TODO: Get rid of activity.coupon_attributes
-      _self.updatePreview(_self.couponData())
+      _self.updatePreview($(@).serializeJSON().activity.coupon_attributes)
 
     @dom.find('input[type="text"], select').change ->
       # TODO: Get rid of activity.coupon_attributes
-      _self.updatePreview(_self.couponData())
+      _self.updatePreview($(@).serializeJSON().activity.coupon_attributes)
 
   updatePreview: (attrJSON) ->
     @couponDetails = $.extend(@couponDetails, attrJSON)
@@ -46,10 +46,7 @@ class @Coupon
 
   couponData: ->
     # TODO: Get rid of activity.coupon_attributes
-    if @dom.closest('form').attr('id').indexOf('activity') > -1
-      @dom.find('input, select, textarea').serializeJSON().activity.coupon_attributes
-    else
-      @dom.find('input, select, textarea').serializeJSON().schedule.coupon_attributes
+    @dom.find('input, select, textarea').serializeJSON().activity.coupon_attributes
 
   observeFiles: ->
     _self = @

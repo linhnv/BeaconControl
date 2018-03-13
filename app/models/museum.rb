@@ -1,2 +1,0 @@
-class Museum < Place
-end

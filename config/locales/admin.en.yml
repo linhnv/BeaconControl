@@ -3,7 +3,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the BSD 3-Clause License found in the
-# LICENSE.txt file in the root directory of this source tree.
+# LICENSE.txt file in the root directory of this source tree. 
 ###
 #
 en:
@@ -156,271 +156,6 @@ en:
       title: 'Beacons'
       action: 'Add Beacon'
 
-  customers:
-    form:
-      unassigned: 'Unassigned'
-      save: 'Save '
-      cancel: 'Cancel'
-      test_notification: '(will be displayed for the ContextOS App users)'
-      uuid: 'UUID'
-      proximity: 'UUID'
-      major: Major
-      minor: Minor
-      namespace: Namespace
-      instance: Instance ID
-      url: URL
-      proximity_tooltip: UUID
-
-    index:
-      title:   'Customers'
-      add_new: 'Add Customer'
-      options: 'Options'
-      details: 'Details'
-      batch_delete: 'Delete Customers'
-
-      unassigned_zone: 'Unassigned'
-      unassigned_floor: 'N/A'
-      select_zone_prompt: 'Set zone'
-      select_floor_prompt: 'Set floor'
-      search: 'Search...'
-
-    modal:
-      title: 'Warning!'
-      body: 'Are you sure you want to delete customer?'
-    reset_password:
-      body: 'Are you sure you want to reset password of this customer?'
-
-  notifications:
-    form:
-      send: 'Send'
-      cancel: 'Cancel'
-    index:
-      title:    'Push Notifications'
-      add_new:  'Add New Push Notification'
-    new:
-      title: 'New push notification'
-
-  places:
-    form:
-      save: Save
-      cancel: Cancel
-    index:
-      title: Places
-      new: Add Place
-      batch_delete: Delete Places
-      search: Search
-      details: Details
-    new:
-      title: New Place
-    edit:
-      title: Edit Place
-    modal:
-      title: Warning!
-      body: Are you sure you want to delete these places?
-
-  advertisments:
-    form:
-      save: Save
-      cancel: Cancel
-    index:
-      title: Advertisments
-      new: Add
-      batch_delete: Delete Advertisments
-      search: Search
-      details: Details
-    new:
-      title: New Advertisment
-    edit:
-      title: Edit Advertisment
-    modal:
-      title: Warning!
-      body: Are you sure you want to delete these advertisments?
-
-  home_sliders:
-    form:
-      save: Save
-      cancel: Cancel
-    index:
-      title: Home Sliders
-      new: Add
-      batch_delete: Delete Sliders
-      search: Search
-      details: Details
-    new:
-      title: New Slider
-    edit:
-      title: Edit Slider
-    modal:
-      title: Warning!
-      body: Are you sure you want to delete these sliders?
-
-  schedules:
-    template: 'Template'
-    edit:
-      title:  'Schedules'
-      action: 'Edit Schedule'
-
-    form:
-      unassigned: 'Unassigned'
-      save: 'Save Schedule'
-      cancel: 'Cancel'
-      test_notification: '(will be displayed for the ContextOS App users)'
-      uuid: 'UUID'
-      proximity: 'UUID'
-      major: Major
-      minor: Minor
-      namespace: Namespace
-      instance: Instance ID
-      url: URL
-      proximity_tooltip: UUID
-
-    index:
-      title:   'Schedules'
-      add_new: 'Add Schedule'
-      options: 'Options'
-      details: 'Details'
-      batch_delete: 'Delete Schedule'
-      enter_action: 'Enter Action'
-      exit_action: 'Exit Action'
-
-      unassigned_zone: 'Unassigned'
-      unassigned_floor: 'N/A'
-      select_zone_prompt: 'Set zone'
-      select_floor_prompt: 'Set floor'
-      search: 'Search...'
-
-    modal:
-      title: 'Warning!'
-      body: 'Are you sure you want to delete schedule?'
-
-    new:
-      title: 'Schedules'
-      action: 'Add Schedule'
-
-  toilets:
-    edit:
-      title:  'Toilet'
-      action: 'Edit Toilet'
-
-    form:
-      unassigned: 'Unassigned'
-      save: 'Save Toilet'
-      cancel: 'Cancel'
-      test_notification: '(will be displayed for the ContextOS App users)'
-      uuid: 'UUID'
-      proximity: 'UUID'
-      major: Major
-      minor: Minor
-      namespace: Namespace
-      instance: Instance ID
-      url: URL
-      proximity_tooltip: UUID
-
-    index:
-      title:   'Toilets'
-      add_new: 'Add Toilet'
-      options: 'Options'
-      details: 'Details'
-      batch_delete: 'Delete Toilet'
-      kind: 'Type'
-      accessible: 'Accessible'
-
-      unassigned_zone: 'Unassigned'
-      unassigned_floor: 'N/A'
-      select_zone_prompt: 'Set zone'
-      select_floor_prompt: 'Set floor'
-      search: 'Search...'
-
-    modal:
-      title: 'Warning!'
-      body: 'Are you sure you want to delete toilet?'
-
-    new:
-      title: 'Toilets'
-      action: 'Add Toilet'
-
-  bus_stops:
-    edit:
-      title:  'Bus Stops'
-      action: 'Edit Bus Stop'
-
-    form:
-      unassigned: 'Unassigned'
-      save: 'Save Bus Stop'
-      cancel: 'Cancel'
-      test_notification: '(will be displayed for the ContextOS App users)'
-      uuid: 'UUID'
-      proximity: 'UUID'
-      major: Major
-      minor: Minor
-      namespace: Namespace
-      instance: Instance ID
-      url: URL
-      proximity_tooltip: UUID
-
-    index:
-      title:   'Bus Stops'
-      add_new: 'Add Bus Stop'
-      options: 'Options'
-      details: 'Details'
-      batch_delete: 'Delete Bus Stop'
-      lng: 'Longtitude'
-      lat: 'Latitude'
-
-      unassigned_zone: 'Unassigned'
-      unassigned_floor: 'N/A'
-      select_zone_prompt: 'Set zone'
-      select_floor_prompt: 'Set floor'
-      search: 'Search...'
-
-    modal:
-      title: 'Warning!'
-      body: 'Are you sure you want to delete bus stop?'
-
-    new:
-      title: 'Bus Stops'
-      action: 'Add Bus Stop'
-
-  geofences:
-    edit:
-      title:  'Geofences'
-      action: 'Edit Geofence'
-
-    form:
-      unassigned: 'Unassigned'
-      save: 'Save Geofence'
-      cancel: 'Cancel'
-      test_notification: '(will be displayed for the ContextOS App users)'
-      uuid: 'UUID'
-      proximity: 'UUID'
-      major: Major
-      minor: Minor
-      namespace: Namespace
-      instance: Instance ID
-      url: URL
-      proximity_tooltip: UUID
-
-    index:
-      title:   'Geofences'
-      add_new: 'Add Geofence'
-      options: 'Options'
-      details: 'Details'
-      batch_delete: 'Delete Geofence'
-      enter_action: 'Enter Action'
-      exit_action: 'Exit Action'
-
-      select_active_prompt: 'Set state'
-      search: 'Search...'
-
-    modal:
-      title: 'Warning!'
-      body: 'Are you sure you want to delete geofence?'
-
-    new:
-      title: 'Geofences'
-      action: 'Add Geofence'
-
-
   maps:
     show:
       title: 'Map'
@@ -518,15 +253,6 @@ en:
         applications: 'Applications'
         beacons: 'Beacons'
         zones: 'Zones'
-        geofences: 'Geofences'
-        schedules: 'Schedules'
-        bus_stops: 'Bus Stops'
-        toilets: 'Toilets'
-        customers: "Customers"
-        notifications: Notifications
-        places: Places
-        advertisments: Advertisments
-        home_sliders: Home Sliders
         map: 'Map'
         extensions_marketplace: 'Add-ons'
         users: 'Users'
@@ -548,23 +274,12 @@ en:
       change: 'Change'
       remove: 'Remove'
 
-    attachment_input:
-      select: 'Add'
-      change: 'Change'
-      remove: 'Remove'
-
-    reset_password_modal:
-      reset: 'Reset'
-
   templates:
     template_1: 'Template with logo'
     template_2: 'Template without logo'
     template_3: 'Template with logo & barcode'
     template_4: 'Template without logo & with barcode'
     template_5: 'Template with button'
-    template_6: 'Template with image & button'
-    template_7: 'Template with audio & button'
-    template_8: 'Template with video & button'
 
   triggers:
     enter: 'On Hello'
@@ -603,12 +318,6 @@ en:
     zones:
       title: "ZONES"
       body: "Zones functionality enables you to group your beacons into zones according to your criteria. Here, you'll easily manage the deployment of your beacons: for example, your zones can correspond to different floors of a multi-storey building."
-    geofences:
-      title: "GEOFENCES"
-      body: "Geofences"
-    schedules:
-      title: "SCHEDULES"
-      body: "schedules"
     map:
       title: "MAP"
       body: "This functionality gives you a visualisation of all your beacons on the map, with no need to refer to a list."
@@ -645,7 +354,7 @@ en:
         To verify beacon setup right away - mark the test notification and make sure the trigger is setup for \"almoust touching\", so you have full control on your test.<br/>
         Click save."
       bring_phone: "Bring together the proper beacon and a phone. The notification should come right away."
-      add_beacon_mobile: "Touch the plus and an arrow right to add a new beacon. Name your beacon and fill it's identification data -
+      add_beacon_mobile: "Touch the plus and an arrow right to add a new beacon. Name your beacon and fill it's identification data - 
         UUID, major and minor. Placing the beacon on the map is optional. To verify beacon setup right away, click \"test notification\"."
       setup_trigger: "Make sure he trigger is setup for \"almoust touching\", so you have full control on your test. Click save."
       sth_wrong: "It's not working. What could have go wrong?"

@@ -1,0 +1,11 @@
+
+
+---
+:concurrency: 25
+:pidfile: ./tmp/pids/sidekiq.pid
+:logfile: ./log/sidekiq.log
+:queues:
+  - [event, 5]
+  - [event_extension, 1]
+  - [default, 1]
+:daemon: false

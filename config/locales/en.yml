@@ -99,7 +99,7 @@ en:
     shared:
 
       layout:
-        email: "your email or username"
+        email: "your email"
         password: "password"
         password_confirmation: "confirm password"
         invitation_code: "Invitation code"
@@ -124,34 +124,6 @@ en:
         not_received_confirmation: "Didn't receive confirmation instructions?"
         not_received_unlock: "Didn't receive unlock instructions?"
         sign_in_with: "Sign in with %{provider}"
-
-  geofences:
-    form:
-      geofence_active: Active
-      geofence_inactive: Inactive
-      action: "Action"
-      delete_nice: 'Delete Geofence'
-      next: "Next"
-
-  bus_stops:
-    form:
-      action: "Action"
-      delete_nice: 'Delete Bus Stops'
-      next: "Next"
-
-
-  schedules:
-    form:
-      action: "Action"
-      delete_nice: 'Delete Schedule'
-      next: "Next"
-
-  toilets:
-    form:
-      action: "Action"
-      delete_nice: 'Delete Schedule'
-      next: "Next"
-
 
   beacons:
     zero: "no beacons"

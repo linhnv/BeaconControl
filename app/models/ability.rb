@@ -3,7 +3,7 @@
 # All rights reserved.
 #
 # This source code is licensed under the BSD 3-Clause License found in the
-# LICENSE.txt file in the root directory of this source tree.
+# LICENSE.txt file in the root directory of this source tree. 
 ###
 
 class Ability
@@ -20,19 +20,10 @@ class Ability
       can :manage, ApplicationSetting, application: { account_id: user.account_id }
       can :manage, Zone, account_id: user.account_id
       can :manage, Beacon, account_id: user.account_id
-      can :manage, Geofence, account_id: user.account_id
-      can :manage, Schedule, account_id: user.account_id
-      can :manage, BusStop, account_id: user.account_id
-      can :manage, Toilet, account_id: user.account_id
       can :manage, Extension
       can :create, Activity
-      can :create, Action
       can :manage, Activity, trigger: { application: { account_id: user.account_id } }
       can :manage, BeaconConfig
-      can :manage, Notification
-      can :manage, Place
-      can :manage, Advertisment
-      can :manage, HomeSlider
     when 'beacon_manager'
       can [:read, :update], Admin, id: user.id
       can :manage, Zone, manager_id: user.id
